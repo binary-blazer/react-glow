@@ -5,7 +5,7 @@
         "Mordechai Meisels",
         "BinaryBlazer"
     ],
-    "version": "1.1.5",
+    "version": "1.1.6",
     "license": "MIT",
     "main": "dist/index.js",
     "module": "dist/react-glow.esm.js",
@@ -43,6 +43,8 @@
         "analyze": "size-limit --why"
     },
     "devDependencies": {
+        "@size-limit/esbuild": "^11.0.2",
+        "@size-limit/esbuild-why": "^11.0.2",
         "@size-limit/preset-small-lib": "^9.0.0",
         "@types/react": "^18.2.23",
         "@types/react-dom": "^18.2.8",
@@ -81,9 +83,5 @@
             "path": "dist/react-glow.esm.js",
             "limit": "10 KB"
         }
-    ],
-    "dependencies": {
-        "@size-limit/esbuild": "^11.0.2",
-        "@size-limit/esbuild-why": "^11.0.2"
-    }
+    ]
 }
