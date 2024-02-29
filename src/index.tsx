@@ -4,7 +4,7 @@ import { GlowCaptureProps, GlowProps } from './index.types'
 export const GlowCapture = (props: GlowCaptureProps) => {
     const {
         className = '',
-        size = '100%',
+        size = 400,
         ...rest
     } = props
 
@@ -45,7 +45,7 @@ export const GlowCapture = (props: GlowCaptureProps) => {
         className={`glow-capture ${className}`}
         style={{
             position: 'relative',
-            '--glow-size': size
+            '--glow-size': `${size}px`
         } as CSSProperties}
         {...rest} />
 }
@@ -58,11 +58,14 @@ calc(var(--glow-y, -99999px) - var(--glow-top, 0px)), #000000 1%, transparent 50
 
 
 export const Glow = (props: GlowProps) => {
+
     const {
         className = '',
         style,
         children,
         color = '#f50057',
+        width = '100%',
+        height = '100%',
         debug = false,
         ...rest
     } = props
@@ -91,7 +94,7 @@ export const Glow = (props: GlowProps) => {
         return () => observer.disconnect()
     }, [])
 
-    return <div ref={element} className='glow' style={{ display: 'grid', ...style }}>
+    return <div ref={element} className='glow' style={{ display: 'grid' }}>
         <div className={className}
             style={{
                 ...style,
@@ -106,6 +109,8 @@ export const Glow = (props: GlowProps) => {
             style={{
                 ...style,
                 '--glow-color': color,
+                width,
+                height,
                 gridArea: '1/1/1/1',
                 pointerEvents: 'none',
                 mask: debug ? undefined : mask,

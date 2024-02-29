@@ -13,7 +13,7 @@ See it live on [codaworks.com](https://codaworks.com).
 Install the package with npm:
 
 ```shell
-npm i @codaworks/react-glow
+npm i @sdevs/react-glow
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ Add the tailwind plugin to unlock the `glow:` variant and `glow` color
 module.exports = {
   ...
   plugins: [
-    require('@codaworks/react-glow/tailwind')
+    require('@sdevs/react-glow/tailwind')
   ]
 }
 ```
@@ -106,4 +106,5 @@ The fact that we clone the children tree has some implications that is important
 
 
 ## Attribution
+Fork of [this package](https://github.com/codaworks/react-glow)
 Inspired by [this tweet](https://twitter.com/codepen/status/1696297659663888490).

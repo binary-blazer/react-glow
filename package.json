@@ -1,11 +1,11 @@
 {
-    "name": "@binary-blazer/react-glow",
+    "name": "@sdevs/react-glow",
     "description": "Add a mouse-tracing glow effect to React components",
     "authors": [
         "Mordechai Meisels",
         "BinaryBlazer"
     ],
-    "version": "1.0.6",
+    "version": "1.1.5",
     "license": "MIT",
     "main": "dist/index.js",
     "module": "dist/react-glow.esm.js",
@@ -29,9 +29,9 @@
     "bugs": {
         "url": "https://github.com/codaworks/react-glow/issues"
     },
-    "homepage": "https://github.com/codaworks/react-glow#readme",
+    "homepage": "https://github.com/binary-blazer/react-glow#readme",
     "engines": {
-        "node": ">=10"
+        "node": ">=16"
     },
     "scripts": {
         "start": "tsdx watch",
