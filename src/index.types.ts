@@ -2,7 +2,7 @@ import { CSSProperties } from 'react'
 
 export type GlowCaptureProps = {
     className?: string,
-    size?: number,
+    size?: number | string,
     children?: React.ReactNode
 }
 
